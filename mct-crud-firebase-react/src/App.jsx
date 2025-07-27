@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Container, Navbar, Row, Col, Nav } from 'react-bootstrap';
+import AddUser from './components/AddUser';
+import UserList from './components/UserList';
 import './App.css'
+import { useState } from 'react';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [userID, setUserID] = useState("");
 
+  const getUserIDHandler = (id) => {
+    console.log("The ID of the document to be edited is: ", id);
+    setUserID(id);
+  }
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {/* <span style={{color: "black"}}>Hello World</span> */}
+      <Navbar className='header' variant='dark'>
+        <Container>
+          <Navbar.Brand href='#home' className='home-link'>Matrix Capital Trust Library - Firebase CRUD</Navbar.Brand>
+          <br />
+        </Container>
+      </Navbar>
+
+      <Container style={{width: "100%"}}>
+        <Row>
+          <Col>
+            <AddUser id={userID} setUserID={setUserID} />
+          </Col>
+        </Row>
+      </Container>
+
+      <br /><br />
+
+      <Container>
+        <Row>
+          <Col>
+            <UserList getUserID={getUserIDHandler} />
+          </Col>
+        </Row>
+      </Container>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

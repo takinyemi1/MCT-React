@@ -5,6 +5,144 @@
   text-align: center;
 }
 
+.home-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  width: 100%;
+  font-size: 50px;
+  background-color: #d3ebcc;
+  color: black;
+}
+
+.home-link:hover {
+  color: rgb(78, 77, 163)
+}
+
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: hsl(83, 39%, 49%);
+}
+
+.onboarding-btns {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+.action-btns {
+  justify-content: center;
+  display: flex;
+  gap: 7px;
+  margin-left: 15%;
+  align-items: center;
+  text-align: center;
+}
+
+.edit-btn {
+  background-color: rgb(51, 92, 179);
+  padding: 8px 8px;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+
+.delete-btn {
+  background-color: #d41111ff;
+  padding: 8px 8px;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.refresh-btn {
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  margin-top: -12.7%;
+  margin-left: 30.5%;
+}
+
+.add-user-btn {
+  background-color: #5cbad1ff;
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+}
+
+.add-user-btn:hover span {
+  display: none;
+}
+
+.add-user-btn:hover::before {
+  content: "Update User Information";
+}
+
+.add-user-btn:hover {
+  background-color: #33706d;
+  /* color: transparent; */
+}
+
+.input-field {
+  width: 98%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f0f0f0;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.date-input-field {
+  width: 98%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d8da8c;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.select-input-field {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #91da88;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.custom-alert .btn-close {
+  /* position: fixed; */
+  bottom: 305px;
+  left: 192px;
+  z-index: 1000;
+  filter: none;
+  opacity: 1;
+  background-color: #d41111ff;
+  border-radius: 80px;
+}
+
+Table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 2px solid #0d3816;
+  padding: 8px;
+  text-align: center;
+  background-color: #1a720e;
+  color: white;
+}
+
+th {
+  font-weight: bold;
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;

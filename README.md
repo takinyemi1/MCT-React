@@ -1,5 +1,5 @@
 # Matrix Capital Trust React Firebase - Create, Read, Update, Delete [CRUD]
-# Mdoule 2.3 - Mobile & Cloud Integration
+# Module 2.3 - Mobile & Cloud Integration
 
 Submitted by: MCT Web Development Team
 

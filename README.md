@@ -21,5 +21,5 @@ The following **required** functionality is completed:
   - When hovered over, "Add User" will display "Update User Information" instead.
 - [x] **Web app includes a delete feature to allow the user to delete information**
   - Each entry has their own delete button.
-- [ ] **Users information is stored in a secure database**
+- [x] **Users information is stored in a secure database**
   - With each "Add User", the user information is stored in a Firebase database.
